@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="jp.ac.it_college.std.s20010.quizv2">
+    <!-- http通信 -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizV2">
+        <activity
+            android:name=".Result"
+            android:exported="true" />
+        <activity
+            android:name=".Sub"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
